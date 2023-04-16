@@ -20,7 +20,7 @@ Berdasarkan pada latar belakang di atas, permasalahan yang dapat diselesaikan pa
 ### Goals
 Tujuan dibuatnya proyek ini adalah sebagai berikut:
 
--   Melakukan pengolahan dataset ethereum agar dapat digunakan dalam membangun model.
+-   Melakukan pengolahan dataset harga emas agar dapat digunakan dalam membangun model.
 -   Membangun model machine learning untuk memprediksi harga satu bulan selanjutnya
 
 ### Solution statements
@@ -102,21 +102,24 @@ Solusi yang dapat dilakukan untuk memenuhi tujuan dari proyek ini di antaranya:
   
   - Mengidentifikasi Missing Value dan Outlier
     <br>
-    <image src='https://raw.githubusercontent.com/vincentopakz/machine_learning_terapan/main/images/outliers.png' width= 500/>
+    
+    <img src="https://user-images.githubusercontent.com/94229589/232325680-88db42d6-a81a-4985-b000-3e162a98ba1e.png" width="500">
     <br> Terlihat jika di atas banyak terdapat outlier pada setiap variabel, lalu untuk mengatasinya nantinya penulis akan menerapkan batas bawah dan batas atas menggunakan metode IQR
     
   - Univariate Analysis
     <br>
-    <image src='https://raw.githubusercontent.com/vincentopakz/machine_learning_terapan/main/images/univariate%20analysis.png' width= 500/>
+    
+    <img src="https://user-images.githubusercontent.com/94229589/232325627-178acd6c-1720-4d89-927b-c4e09a8c681f.png" width="500">
     <br> Terlihat pada grafik bahwa semua data cenderung distribusi nilainya miring ke kanan (right-skewed). Hal ini akan berimplikasi pada model nantinya.
     
   - Multivariate Analysis
     <br>
-    <image src='https://raw.githubusercontent.com/vincentopakz/machine_learning_terapan/main/images/multivariate%20analysis.png' width= 500/>
-    <br> Terlihat bahwa pada grafik kebanyakan bernilai positif karena kebanyakan grafik pada sumbu y dan x mengalami peningkatan yang cukup signifikan membentuk sebuah garis lurus.
     
+    <img src="https://user-images.githubusercontent.com/94229589/232325604-efb38490-bc51-4030-bf82-7fa1cf136059.png" width="500">
+    <br> Terlihat bahwa pada grafik kebanyakan bernilai positif karena kebanyakan grafik pada sumbu y dan x mengalami peningkatan yang cukup signifikan membentuk sebuah garis lurus.
     <br>
-    <image src='https://raw.githubusercontent.com/vincentopakz/machine_learning_terapan/main/images/correlation%20matrix.png' width= 500/>
+    
+    <img src="https://user-images.githubusercontent.com/94229589/232325512-97829a34-15f0-4197-a7c5-59fb61010356.png" width="500">
     <br> Terlihat pada matriks korelasi di atas dapat disimpulkan bahwa semua variabel memiliki keterikatan dan korelasi yang kuat antar variabel lainnya, dimana nilai korelasi antar variabel bernilai lebih dari 0.9 atau mendekati 1.
   
 ## Data Preparation
@@ -172,9 +175,7 @@ Kemudian proses selanjutnya melakukan prediksi menggunakan data uji dan melakuka
 ## Evaluation
 Metrik yang akan penulis gunakan pada proyek ini adalah MSE atau Mean Squared Error yang menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi. Karena penulis baru melakukan scaling pada data latih untuk menghindari kebocoran data, maka sebelum menghitung nilai mse, penulis perlu melakukan scaling fitur terlebih dahulu pada data uji. Setelah melakukan scaling data uji barulah MSE dihitung. Secara matematis dihitung dengan persamaan berikut:
 
-<br>
-    <image src='https://raw.githubusercontent.com/vincentopakz/machine_learning_terapan/main/images/MSE%3D%3D.png' width = 200/>
-    <br>
+<img src="https://user-images.githubusercontent.com/94229589/232325470-cfeea4fe-65f4-4b5c-aa91-fe087a177f87.png" width="200">
 
 keterangan:
 N = jumlah dataset,
@@ -182,18 +183,16 @@ yi = nilai sebenarnya,
 yi^ = nilai prediksi,
 
 Penulis juga melakukan evaluasi dengan menggunakan metrik akurasi, yaitu tingkat keakuran data prediksi yang didasarkan dari data latih pada model. Metrik Akurasi mungkin metrik paling awam/paling diketahui pada pemodelan klasifikasi. Metrik ini adalah persentase jumlah data yang diprediksi secara benar terhadap jumlah keseluruhan data. Jika ditinjau dengan confusion matrix, akurasi adalah rasio dari jumlah elemen diagonal terhadap jumlah seluruh elemen matriks, atau:
-
-<br>
-    <image src='https://raw.githubusercontent.com/vincentopakz/machine_learning_terapan/main/images/accuracy%3D%3D.png' width = 400/>
-    <br>
-
+   
+<img src="https://user-images.githubusercontent.com/94229589/232325361-0ca77056-71b1-4460-8075-5887120a5952.png" width="400">
 
 Berdasarkan metrik akurasi penulis mendapati bahwa model dengan akurasi tertinggi adalah _XGBR Boosting_, yaitu 98.2%%. Sama halnya dengan metrik akurasi, MSE juga menunjukkan bahwa model _XGBR Boosting_ memberikan error yang paling kecil. Sedangkan _KNN_ memiliki error paling besar. Jadi model yang akan penulis gunakan dalam memprediksi harga satu bulan selanjutnya adalah model _XGBR Boosting_.
 
 Berikut ini bisa kita lihat perbandingan grafik MSE dan akurasi ketiga model
 
-<br>
-    <image src='https://raw.githubusercontent.com/vincentopakz/machine_learning_terapan/main/images/mse.png' width = 400/>
-    <br>
+<img src="https://user-images.githubusercontent.com/94229589/232324894-395da9d6-149a-4a84-b765-5eff93803434.png" width="400">
+     
+
 
 Berdasarkan tingkat eror pada grafik di atas, semakin kecil tingkat eror maka semakin baik model tersebut memprediksi data. Jika dibandingkan dengan dua model lainnya, model dengan error terkecil adalah Model XGBR Boosting.
+
