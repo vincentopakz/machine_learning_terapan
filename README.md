@@ -102,7 +102,7 @@ Solusi yang dapat dilakukan untuk memenuhi tujuan dari proyek ini di antaranya:
   
   - Mengidentifikasi Missing Value dan Outlier
     <br>
-    <image src='https://raw.githubusercontent.com/AzharRizky/Predictive-Anlaytics/main/images/boxplot_outlier.png' width= 500/>
+    <image src='https://raw.githubusercontent.com/vincentopakz/machine_learning_terapan/main/images/outliers.png' width= 500/>
     <br> Terlihat jika di atas banyak terdapat outlier pada setiap variabel, lalu untuk mengatasinya nantinya penulis akan menerapkan batas bawah dan batas atas menggunakan metode IQR
     
   - Univariate Analysis
