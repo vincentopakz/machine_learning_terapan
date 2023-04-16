@@ -184,7 +184,7 @@ yi^ = nilai prediksi,
 Penulis juga melakukan evaluasi dengan menggunakan metrik akurasi, yaitu tingkat keakuran data prediksi yang didasarkan dari data latih pada model. Metrik Akurasi mungkin metrik paling awam/paling diketahui pada pemodelan klasifikasi. Metrik ini adalah persentase jumlah data yang diprediksi secara benar terhadap jumlah keseluruhan data. Jika ditinjau dengan confusion matrix, akurasi adalah rasio dari jumlah elemen diagonal terhadap jumlah seluruh elemen matriks, atau:
 
 <br>
-    <image src='https://raw.githubusercontent.com/vincentopakz/machine_learning_terapan/main/images/accuracy%3D%3D.png' width = 200/>
+    <image src='https://raw.githubusercontent.com/vincentopakz/machine_learning_terapan/main/images/accuracy%3D%3D.png' width = 400/>
     <br>
 
 
