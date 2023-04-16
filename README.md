@@ -193,7 +193,7 @@ Berdasarkan metrik akurasi penulis mendapati bahwa model dengan akurasi tertingg
 Berikut ini bisa kita lihat perbandingan grafik MSE dan akurasi ketiga model
 
 <br>
-    <image src='https://raw.githubusercontent.com/vincentopakz/machine_learning_terapan/main/images/mse.png' width = 800/>
+    <image src='https://raw.githubusercontent.com/vincentopakz/machine_learning_terapan/main/images/mse.png' width = 400/>
     <br>
 
-Berdasarkan tingkat eror pada grafik di atas, semakin kecil tingkat eror maka semakin baik model tersebut memprediksi data. Jika dibandingkan dengan dua model lainnya, model dengan Error terkecil adalah Model Random Forest.
+Berdasarkan tingkat eror pada grafik di atas, semakin kecil tingkat eror maka semakin baik model tersebut memprediksi data. Jika dibandingkan dengan dua model lainnya, model dengan Error terkecil adalah Model XGBR Boosting.
