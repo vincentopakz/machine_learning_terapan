@@ -107,16 +107,16 @@ Solusi yang dapat dilakukan untuk memenuhi tujuan dari proyek ini di antaranya:
     
   - Univariate Analysis
     <br>
-    <image src='https://raw.githubusercontent.com/AzharRizky/Predictive-Anlaytics/main/images/distribusi_data(right-skewed).png' width= 500/>
+    <image src='https://raw.githubusercontent.com/vincentopakz/machine_learning_terapan/main/images/univariate%20analysis.png' width= 500/>
     <br> Terlihat pada grafik bahwa semua data cenderung distribusi nilainya miring ke kanan (right-skewed). Hal ini akan berimplikasi pada model nantinya.
     
   - Multivariate Analysis
     <br>
-    <image src='https://raw.githubusercontent.com/AzharRizky/Predictive-Anlaytics/main/images/korelasi_antar_variabel.png' width= 500/>
+    <image src='https://raw.githubusercontent.com/vincentopakz/machine_learning_terapan/main/images/multivariate%20analysis.png' width= 500/>
     <br> Terlihat bahwa pada grafik kebanyakan bernilai positif karena kebanyakan grafik pada sumbu y dan x mengalami peningkatan yang cukup signifikan membentuk sebuah garis lurus.
     
     <br>
-    <image src='https://raw.githubusercontent.com/AzharRizky/Predictive-Anlaytics/main/images/corelation_matrix.png' width= 500/>
+    <image src='https://raw.githubusercontent.com/vincentopakz/machine_learning_terapan/main/images/correlation%20matrix.png' width= 500/>
     <br> Terlihat pada matriks korelasi di atas dapat disimpulkan bahwa semua variabel memiliki keterikatan dan korelasi yang kuat antar variabel lainnya, dimana nilai korelasi antar variabel bernilai lebih dari 0.9 atau mendekati 1.
   
 ## Data Preparation
@@ -193,7 +193,7 @@ Berdasarkan metrik akurasi penulis mendapati bahwa model dengan akurasi tertingg
 Berikut ini bisa kita lihat perbandingan grafik MSE dan akurasi ketiga model
 
 <br>
-    <image src='https://github.com/auriwan/Ethereum-Cryptocurrency-Predictive-Analytics/blob/data-gambar/Grafik%20mse.png?raw=true' width = 800/>
+    <image src='https://raw.githubusercontent.com/vincentopakz/machine_learning_terapan/main/images/mse.png' width = 800/>
     <br>
 
 Berdasarkan tingkat eror pada grafik di atas, semakin kecil tingkat eror maka semakin baik model tersebut memprediksi data. Jika dibandingkan dengan dua model lainnya, model dengan Error terkecil adalah Model Random Forest.
